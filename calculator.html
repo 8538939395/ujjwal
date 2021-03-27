@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+<head>
+	<style>
+		body{
+			  background: linear-gradient(to right, #e96443, #904e95);
+		}
+			.buttonM {
+  background-color: paleturquoise;
+  border: none;
+		width: 70px;
+  color: black;
+  padding: 30px;
+  margin-button-top: 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+		
+}
+		.buttonM:hover {
+  background-color: orange;
+  border: none;
+		width: 70px;
+  color: black;
+  padding: 30px;
+  margin-button-top: 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+		
+}
+	.button {
+  background-color: paleturquoise;
+  border: none;
+		
+  color: black;
+  padding: 30px;
+		margin-button-top: 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+		
+}
+		.button:hover {
+  background-color: orange;
+  border: none;
+		
+  color: black;
+  padding: 30px;
+		margin-button-top: 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+		
+}
+		.btnC{
+			 background-color: paleturquoise;
+             border: none;
+             color: black;
+			 width: 140px;
+			 height: 80px;
+             padding: 30px;
+             text-align: center;
+             text-decoration: none;
+             display: inline-block;
+             font-size: 16px;
+		}
+		.btnC:hover{
+			
+			background-color: red;
+             border: none;
+             color: black;
+			transition:  1s ease ;
+			 width: 140px;
+			 height: 80px;
+             padding: 30px;
+             text-align: center;
+             text-decoration: none;
+             display: inline-block;
+             font-size: 16px;
+		}
+		.btnS{
+			 background-color:paleturquoise;
+             border: none;
+             color: black;
+			 height: 160px;
+			width: 74px;
+			margin-left: 4px;
+             padding: 30px;
+			position: absolute;
+             text-align: center;
+             text-decoration: none;
+             display: inline-block;
+             font-size: 16px;
+		
+		}
+	
+		.form1{
+			
+			left: 40%;
+			top: 25%;
+			position: absolute;	
+			line-height: 3px;
+			
+		}
+		.txt1{
+			width: 288px;
+			font-size: 20px;
+			text-align: right;
+			height: 70px;
+			position: absolute;
+			bottom: 405px;
+			border: none;
+		}
+		.title{
+			top:200px;
+			left:200px;
+			border:1px solid #F4EDED;
+			position: absolute;
+			font-size: 35px;
+			padding: 20px 70px;
+			
+		}
+		.title1{
+			top:280px;
+			left:325px;
+			border:1px solid #F4EDED;
+			position: absolute;
+			font-size: 20px;
+			padding: 20px 30px;
+			
+		}
+	</style>
+	<script>
+		function f1(num){
+			document.formN.textfield.value=document.formN.textfield.value+num;
+		}
+		function cancel()
+		{
+		document.formN.textfield.value= "";	
+		}
+		function equalsToo()
+		{
+		 var a=document.formN.textfield.value;
+			if(a)
+				{
+					document.formN.textfield.value=eval(a);
+			
+				}
+		}
+		
+	</script>
+<meta charset="utf-8">
+<title>Calculator</title>
+	
+</head>
+
+<body>
+	<form class="form1" name="formN">
+  <input type="text" class="txt1" name="textfield" id="textfield">
+  <input type="button" class="btnC" name="button" id="button" onClick="cancel()" value="C">
+  <input type="button" class="buttonM" name="button3" onClick="f1('%')" id="button3" value="%">
+  <input type="button" class="button" name="button4" id="button4" onClick="f1('/')" value=" / "><br><br>
+  <input type="button" class="button" name="button5" id="button5" onClick="f1(1)" value="1">
+  <input type="button" class="button" name="button6" id="button6" onClick="f1(2)" value="2">
+  <input type="button" class="button"  name="button7" id="button7" onClick="f1(3)" value="3">
+  <input type="button" class="button" name="button8" id="button8" onClick="f1('*')" value=" *"><br><br>
+  <input type="button" class="button" name="button9" id="button9" onClick="f1(4)" value="4">
+  <input type="button" class="button" name="button10" id="button10" onClick="f1(5)" value="5">
+  <input type="button" class="button"  name="button11" id="button11" onClick="f1(6)" value="6">
+  <input type="button" class="button" name="button12" id="button12" onClick="f1('-')" value=" -"><br><br>
+  <input type="button" class="button" name="button13" id="button13" onClick="f1(7)" value="7">
+  <input type="button" class="button" name="button14" id="button14" onClick="f1(8)" value="8">
+  <input type="button" class="button" name="button15" id="button15" onClick="f1(9)" value="9">
+  <input type="button" class="button" name="button16" id="button16" onClick="f1('+')" value="+"><br><br>
+  <input type="button" class="buttonM" name="button17" id="button17" onClick="f1('00')" value="00">
+  <input type="button" class="button" name="button18" id="button18" onClick="f1(0)" value="0">
+  <input type="button" class="button" name="button19" id="button19" onClick="f1('.')" value=" .">
+  <input type="button" class="button" name="button20" id="button20" onClick="equalsToo()" value="=">
+	</form>
+	<h1>&nbsp;</h1>
+	<h1>&nbsp;</h1>
+	<h1>&nbsp;</h1>
+	<h1>&nbsp;</h1>
+<h1>Designed by: </h1>
+	<h1>  Ujjwal Singh Rajput </h1>
+</body>
+</html>
